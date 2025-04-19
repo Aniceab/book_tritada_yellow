@@ -1,0 +1,19 @@
+s3:
+  input_bucket: "ingesta_file/yellow_tripdata_sample_2023-02.parquet"
+  output_bucket: "prd-yellow-taxi-table-1"
+  aws_access_key: "AKIAQ62SYYVDQTYHY7WP"
+  aws_secret_key: "IivboAdebexkiXsW+6BJHfPWb3WmYYUJKiLxTOHW"
+
+pipeline:
+  months:
+    - "2023-01"
+    - "2023-02"
+    - "2023-03"
+    - "2023-04"
+    - "2023-05"
+  fields:
+    - "VendorID"
+    - "passenger_count"
+    - "total_amount"
+    - "tpep_pickup_datetime"
+    - "tpep_dropoff_datetime"

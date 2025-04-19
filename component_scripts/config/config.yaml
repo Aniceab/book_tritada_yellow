@@ -1,0 +1,18 @@
+s3:
+  input_bucket: "yellow-taxi-files-anice"
+  output_bucket: "prd-yellow-taxi-table-1"
+  prefix: "yellow_tripdata_"
+
+pipeline:
+  months:
+    - "2023-01"
+    - "2023-02"
+    - "2023-03"
+    - "2023-04"
+    - "2023-05"
+  fields:
+    - "VendorID"
+    - "passenger_count"
+    - "total_amount"
+    - "tpep_pickup_datetime"
+    - "tpep_dropoff_datetime"
